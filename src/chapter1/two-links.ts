@@ -1,4 +1,12 @@
 type Vector2 = [number, number];
+
+/**
+ * Returns 
+ * @param l1: length of link1
+ * @param l2: length of link2
+ * @param theta1: radian between x axis and link1
+ * @param theta2: radian between link1 and link2
+ */
 export function forwardKinematicsTwo(
   l1: number,
   l2: number,
