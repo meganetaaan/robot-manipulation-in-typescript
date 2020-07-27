@@ -38,7 +38,7 @@ export function backwardKinematicsTwo(
   const s2 = Math.sin(theta2);
   console.log(`theta2: ${theta2}, c2: ${c2}, s2: ${s2}`)
   const theta1 = Math.atan2(
-    -l2 * s2 * x + (l1 + l2 * c2 * y),
+    -l2 * s2 * x + (l1 + l2 * c2) * y,
     (l1 + l2 * c2) * x + l2 * s2 * y,
   );
   return [theta1, theta2];

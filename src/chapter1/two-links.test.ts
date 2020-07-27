@@ -1,7 +1,7 @@
 import {
   assertEquals,
 } from "https://deno.land/std@0.60.0/testing/asserts.ts";
-import type { TestData } from "../lib/test.ts";
+import type { TestData } from "../../lib/test.ts";
 import { forwardKinematicsTwo, backwardKinematicsTwo } from "./two-links.ts";
 
 const testDatas: TestData<typeof forwardKinematicsTwo>[] = [
@@ -26,8 +26,8 @@ testDatas.forEach((t, i) => {
 
 const testDatas2: TestData<typeof backwardKinematicsTwo>[] = [
   {
-    args: [0, 0, 0, 0],
-    expected: [Math.PI, Math.PI],
+    args: [1, 1, 1, 1],
+    expected: [0, Math.PI / 2],
   },
   { args: [1, 1, 2, 0], expected: [0, 0] },
 ];
