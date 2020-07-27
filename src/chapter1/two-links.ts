@@ -1,7 +1,7 @@
 type Vector2 = [number, number];
 
 /**
- * Returns 
+ * Returns the coordinate of the tip of the arm.
  * @param l1: length of link1
  * @param l2: length of link2
  * @param theta1: radian between x axis and link1
@@ -25,6 +25,13 @@ export function forwardKinematicsTwo(
   ];
 }
 
+/**
+ * Returns the radians of each link.
+ * @param l1: length of link1
+ * @param l2: length of link2
+ * @param x: coordinate x of tip of the arm
+ * @param y: coordinate y of tip of the arm
+ */
 export function backwardKinematicsTwo(
   l1: number,
   l2: number,
