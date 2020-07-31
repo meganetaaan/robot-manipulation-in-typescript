@@ -8,7 +8,7 @@ This repository is an implementation of the book "[実践ロボット制御](htt
 
 You can use [VSCode devcontainer](https://code.visualstudio.com/docs/remote/containers) of whole required environment.
 
-* Deno v1.11
+* Deno ~1.1
 
 ## Test
 
